@@ -1,0 +1,16 @@
+The following CSS code snippet demonstrates an issue where the pseudo-element ::before is not displayed as intended when the parent element has a specific background color.
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+div::before {
+  content: "Hello";
+  color: #fff;
+}
+```
+
+The expected behavior is that "Hello" should appear on top of the red background. However, in some browsers or configurations, it might not be visible.
